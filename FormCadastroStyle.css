@@ -5,13 +5,50 @@
     text-decoration: none;
 }
 
+.Cabecalho-da-Imagem {
+
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+
+}
+
+.CabecalhoImagem {
+
+    height: 100px;
+
+}
+
+
+.Imagem-da-Principal {
+
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    justify-content: space-around;
+
+}
+
+.ImagemPrincipal {
+
+    margin-top: -100px;
+    margin-right: -500px;
+    height: 500px;
+
+
+}
+
 #titulo {
 
     font-family: sans-serif;
     color: #000000;
     text-align: center;
-    margin-top: 35px;
+    margin-top: -100px;
 
+}
+
+#titulo2 {
+    text-align: left;
 }
 
 #subtitulo {
@@ -23,14 +60,21 @@
 }
 
 #check {
+
+
     display: inline-block;
+
 }
 
 fieldset {
+
+    margin-top: -400px;
+    margin-bottom: 200px;
     border: 0;
 }
 
 body {
+
     background: linear-gradient(65.15deg, #008000 50%, #2e8b57 90%);
     font-family: sans-serif;
     font-size: 1.5em;
@@ -38,12 +82,14 @@ body {
     margin-left: 5%;
     margin-top: 2%;
     justify-content: center;
+
 }
 
 input,
 select,
 textarea,
 button {
+
 
     font-family: sans-serif;
     font-size: 1em;
@@ -63,11 +109,73 @@ button {
 }
 
 .campo {
-    margin-bottom: 1em;
+
+    margin-bottom: 10px;
 }
 
 .campo label {
-    margin-bottom: 0.2em;
+
+
+    margin-bottom: 10px;
     color: #000000;
     display: block;
+}
+
+fieldset .grupo .campo {
+
+    margin-right: 1em;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo select,
+.campo textarea {
+
+
+    padding: 0.2em;
+    border: 2px solid #000000;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+
+
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+
+    background-color: #C0C0C0;
+}
+
+.botao {
+
+    background-color: #228B22;
+    width: 200px;
+    height: 60px;
+    border: 2px #000000 solid;
+    border-radius: 15px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 35px;
+    margin-bottom: 1em;
+    transform: translater(-50%, -50%);
+
+}
+
+.botao:hover {
+
+    background: #fdfffd;
+    filter: brightness(1.2);
+    border: 3px rgba(39, 189, 36) solid;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+.botao,
+select {
+    cursor: pointer;
 }
